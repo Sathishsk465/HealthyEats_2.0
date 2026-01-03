@@ -4,6 +4,7 @@ import { ShoppingCart, User, LogOut, Menu, X, Leaf } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { useAuth } from '../../context/AuthContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../../assets/logo_2.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <Link to="/" className="flex items-center space-x-2">
-                        <Leaf className="text-primary w-8 h-8" />
+                        <img src={logo} className='w-18' alt="logo" />
                         <span className="text-2xl font-bold text-primary tracking-tight">
                             Healthy<span className="text-accent-brown">Eats</span>
                         </span>
